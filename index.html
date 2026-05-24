@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Three Forces — Interactive Book</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/book.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <a href="#home" class="logo" data-nav="home">
+          <span class="logo-icon">⚡</span>
+          <span class="logo-text">The Three<br><em>Forces</em></span>
+        </a>
+        <button class="sidebar-toggle" id="sidebarToggle" aria-label="Toggle menu">☰</button>
+      </div>
+      <nav class="chapter-nav" id="chapterNav"></nav>
+      <div class="sidebar-footer">
+        <p>Made for curious minds ages 10+</p>
+      </div>
+    </aside>
+
+    <main class="content" id="mainContent">
+      <div class="loading" id="loading">Loading your adventure…</div>
+    </main>
+  </div>
+
+  <script src="js/illustrations.js"></script>
+  <script src="js/chapter-meta.js"></script>
+  <script src="js/supplemental-content.js"></script>
+  <script src="js/book.js"></script>
+</body>
+</html>
