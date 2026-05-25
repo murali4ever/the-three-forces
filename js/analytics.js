@@ -1,7 +1,7 @@
 /** Privacy-friendly analytics via GoatCounter — tracks chapter views (hash routes). */
 const Analytics = {
   /** Set your GoatCounter site code (subdomain) from https://www.goatcounter.com/ */
-  site: 'the-three-forces',
+  site: 'three-forces',
 
   init() {
     if (!this.site || this._started) return;
