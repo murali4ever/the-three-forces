@@ -464,6 +464,10 @@
     requestAnimationFrame(() => {
       main.querySelector('.page')?.classList.add('page-visible');
     });
+
+    if (typeof Analytics !== 'undefined') {
+      Analytics.trackPage(id);
+    }
   }
 
   document.addEventListener('DOMContentLoaded', init);
